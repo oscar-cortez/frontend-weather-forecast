@@ -1,0 +1,102 @@
+
+html,body { 
+height: 100%;
+}
+html { 
+	display: table; 
+	margin: auto;
+}
+body{
+	display: table-cell;
+	vertical-align: middle;
+}
+body { 
+background-image:url("http://2.bp.blogspot.com/-rEW0NCO8mK4/UhgRnIZy0gI/AAAAAAAAGQg/PpCr_DGO6Dw/s1600/fondos-pantalla.jpg");
+}
+.button{
+		color: white;
+		
+		border-radius: 15px;
+		height:25px; 
+		width:75px;
+		margin:10px 10px 10px 10px ;
+		text-align:center ; 
+		border-style:solid;
+		border-width:2px;	
+		border-color:white;
+		text-align: center;
+
+}
+.ingresos {
+	color: white;
+	height:200px; 
+	width: 300px; 
+	border-style: solid;
+	border-width: 2px ; 
+ 	border-color: : #000000;
+ 	border-radius: 15px;
+ 	text-align: center;
+
+}
+.dato1{
+	color:white;
+	height:300px;
+	width: 280px; 
+	border-style: solid;
+	border-width: 2px ; 
+ 	border-radius: 15px;
+ 	display: none;
+ 	-webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+ 	animation: myfirst 5s;
+}
+
+.dato1{
+   float: right;
+    width: 300px;
+    height: 170px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.dato1:hover {
+    float: right;
+    width: 300px;
+    height: 270px;
+    font-size: 25px;
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+}
+.Home {
+
+	margin:100px 100px 100px 100px ; 	
+		text-align: center;
+		display: none;
+		color: white;
+    }
+  .Titulo { 
+   height:80px;
+	width: 300px;
+	border-style: solid;
+	border-width: 2px ; 
+ 	border-radius: 15px;
+ 	color: white;
+ 	text-align: center;
+   -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+    animation: myfirst 120s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background: red;}
+    25%  {background: yellow;}
+    50%  {background: blue;}
+    100% {background: green;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background: red;}
+    25%  {background: yellow;}
+    50%  {background: blue;}
+    100% {background: green;}
+}

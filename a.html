@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script> 
+		var pais = prompt("Ingrese el pais el cual quiere saber su clima:")
+		var capital = prompt("Ingrese la capital del pais:")
+		jQuery(document).ready(function($) { 
+						$.ajax({ 
+					url : "Paises.json", dataType : "json",
+					success : function(parsed_json) {
+						for (var i = 0; i <= 242; i++) { //recorrer el json de paises para encontrar su codigo
+							if (((parsed_json[i]["name"]).toLowerCase()) == pais.toLowerCase()){
+								codPais = parsed_json[i]["code"];
+							};
+						};
+
+
+jQuery(document).ready(function($) { 
+	var direccion = "http://api.wunderground.com/api/0a3dd826c5ddd6ff/conditions/q/"pais"/"capital".json";
+	$.ajax({ url : direccion, dataType : "jsonp", 
+		success : function(parsed_json) { 
+		var location = parsed_json['location']['city']; 
+		var temp_f = parsed_json['current_observation']['temp_f']; 
+		alert("Current temperature in " + location + " is: " + temp_f); } }); }); </script>
+
+</head>
+
+<body>
+	
+</body>
+
+</html>
